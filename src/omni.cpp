@@ -93,7 +93,7 @@ public:
     }
 
     node_ = ros::NodeHandlePtr(new ros::NodeHandle);
-    node_->param(std::string("tf_prefix"), tf_prefix_, std::string("/"));
+    node_->param(std::string("tf_prefix"), tf_prefix_, std::string(""));
 
     omni_frame_name = "omni_base_link";
 
